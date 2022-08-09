@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 # Initalise the Flask app
-app = Flask(__name__)
+app = Flask(__name__,template_folder='Templates')
 model = pickle.load(open('model.pkl', 'rb'))
 
 
