@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drybeans Model API</title>
+</head>
+<body>
+<table align="right" border="black">
+    <tr><td><b>Names:</b></td><td>Alankrit Kharbanda, Ankit Jain, Avani Phadke, Vanita Tadakhe</td></tr>
+    <tr><td><b>Group Details:</b></td><td>Group 3</td></tr>
+    <tr><td><b>Assignment Dataset:</b></td><td>Dry Bean Dataset</td></tr>
+</table>
+    <h1>Classify Dry Bean</h1> <br>
+    <p>Enter Feature Values</p><br>
+    <form action="/classify" method="POST">
+        <input type="text" name="area" placeholder="Area" required="required" /><br>
+    	<input type="text" name="aspectration" placeholder="AspectRation" required="required" /><br>
+        <input type="text" name="eccentricity" placeholder="Eccentricity" required="required" /><br>
+        <input type="text" name="extent" placeholder="Extent" required="required" /><br>
+        <input type="text" name="solidity" placeholder="Solidity" required="required" /><br>
+        <input type="text" name="roundness" placeholder="roundness" required="required" /><br>
+        <input type="text" name="Compactness" placeholder="Compactness" required="required" /><br>
+        <input type="text" name="ShapeFactor1" placeholder="ShapeFactor1" required="required" /><br>
+        <input type="text" name="ShapeFactor2" placeholder="ShapeFactor2" required="required" /><br>
+        <input type="text" name="ShapeFactor4" placeholder="ShapeFactor4" required="required" /><br>
+        <br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Classify</button>
+
+    </form>
+    <br>
+    <br>
+     {{ prediction_text }}
+</body>
+</html>
